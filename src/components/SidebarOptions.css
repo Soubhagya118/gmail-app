@@ -1,0 +1,28 @@
+.sidebarOption{
+    display: flex;
+    cursor: pointer;
+    height: 35px;
+    gap:10px;
+    /* border-top-left-radius: 20px; */
+align-items: center;
+padding: 0px 25px;
+border-top-right-radius: 20px;
+border-bottom-right-radius: 20px;
+
+margin-right: 10px;
+}
+
+.sidebarOptions--active{
+background-color: #fce8e6;
+}
+.sidebarOption:hover{
+ background-color: whitesmoke;
+}
+
+.sidebarOptions--active h4,
+.sidebarOptions--active p,
+.sidebarOptions--active svg{
+    color: #d93025;
+    font-weight: bold;
+    opacity: 1 !important;
+}
