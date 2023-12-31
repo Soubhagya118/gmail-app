@@ -28,7 +28,7 @@ console.log("usermail . email", userMail.email)
   const getData = async(e)=>{
     try{
       console.log("hi")
-      let x = await axios.get(`https://mail-dec-default-rtdb.firebaseio.com/sent-emails`)
+      let x = await axios.get(`https://mail-dec-default-rtdb.firebaseio.com/sent-emails.json`)
        console.log("xtt from sent mail",x.data);
 let dataa=x.data
       var storeData = [];
