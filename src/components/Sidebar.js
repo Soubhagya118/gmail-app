@@ -17,6 +17,9 @@ import Inbox from './Inbox/Inbox';
 
 const Sidebar = () => {
   const sendMessageIsOpen = useSelector((state)=>state.mail.sendMessageIsOpen);
+
+  const sentmsglist =useSelector(state=>state.mail.sentMailList);
+  const count= sentmsglist.length;
   const dispatch =useDispatch();
 
 
@@ -34,7 +37,7 @@ const Sidebar = () => {
     <SidebarOptions Icon={StarRateIcon} title='Starred' number="224" />
     <SidebarOptions Icon={AccessTimeIcon} title='Snoozed' number="224" />
     <SidebarOptions Icon={LabelImportantIcon} title='Important' number="224" />
-    <Sent Icon={SendIcon} title='Sent' number="224" />
+    <Sent Icon={SendIcon} title='Sent' number={count} />
     <SidebarOptions Icon={DraftsIcon} title='Drafts' number="224" />
     <SidebarOptions Icon={InboxIcon} title='Catagory' number="224" />
 
